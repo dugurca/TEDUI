@@ -26,7 +26,11 @@ namespace Assets._Project.Scripts.P4
 
             go.AddComponent<Rigidbody>();
             go.transform.position = transform.position;
+
+            //Clear :(
         }
+
+
 
 
 

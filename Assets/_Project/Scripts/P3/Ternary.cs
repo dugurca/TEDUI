@@ -8,11 +8,11 @@ namespace Assets._Project.Scripts.P3
             GameObject go;
             if (Random.value > 0.5f)
             {
-                go = Instantiate(GameObject.CreatePrimitive(PrimitiveType.Sphere));
+                go = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             }
             else
             {
-                go = Instantiate(GameObject.CreatePrimitive(PrimitiveType.Cube));
+                go = GameObject.CreatePrimitive(PrimitiveType.Cube);
             }
             go.AddComponent<Rigidbody>();
             go.transform.position = transform.position;
@@ -30,6 +30,6 @@ namespace Assets._Project.Scripts.P3
 
 /*
 GameObject go = Random.value > 0.5 ? 
-    Instantiate(GameObject.CreatePrimitive(PrimitiveType.Sphere)) : 
-    Instantiate(GameObject.CreatePrimitive(PrimitiveType.Cube));
+    GameObject.CreatePrimitive(PrimitiveType.Sphere): 
+    GameObject.CreatePrimitive(PrimitiveType.Cube);
 */
