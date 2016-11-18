@@ -37,6 +37,8 @@ namespace Assets._Project.Scripts.P6
             }
             gameObject.GetComponent<Renderer>().material = Resources.Load("RedMat") as Material;
 
+            //
+
             while (Time.time < startTime + 15f)
             {
                 yield return new WaitForEndOfFrame();
