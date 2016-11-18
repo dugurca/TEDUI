@@ -10,10 +10,32 @@ namespace Assets._Project.Scripts.A
             Debug.LogWarning(Mathf.Approximately(1f - Mathf.Epsilon, 1f + Mathf.Epsilon));
             Debug.LogWarning(Mathf.PI);
 
-            for (int i = 0; i < 100000; i++)
-            {
-                Debug.LogWarning(Mathf.PerlinNoise(i, Time.time));
-            }
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        void Update()
+        {
+            //Debug.Log(Mathf.Sin(Time.time));
+            //Debug.Log(Mathf.Abs(Mathf.Cos(Time.time)));
         }
     }
 }
