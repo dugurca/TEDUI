@@ -9,33 +9,30 @@ namespace Assets._Project.Scripts.A
             Debug.LogWarning(Mathf.Approximately(0.000000019f, 0.000000018f));
             Debug.LogWarning(Mathf.Approximately(1f - Mathf.Epsilon, 1f + Mathf.Epsilon));
             Debug.LogWarning(Mathf.PI);
-
-            
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         void Update()
         {
-            //Debug.Log(Mathf.Sin(Time.time));
-            //Debug.Log(Mathf.Abs(Mathf.Cos(Time.time)));
+            Debug.Log("sin: " + Mathf.Sin(Time.time));
+            Debug.Log("cos abs: " + Mathf.Abs(Mathf.Cos(Time.time)));
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
