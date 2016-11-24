@@ -5,20 +5,27 @@ namespace Assets._Project.Scripts.P3
     public class Ternary : MonoBehaviour {
         void Update ()
         {
-            GameObject go;
-            if (Random.value > 0.5f)
-            {
-                go = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            }
-            else
-            {
-                go = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            }
+            GameObject go = Random.value > 0.5f ? 
+                GameObject.CreatePrimitive(PrimitiveType.Cube) : 
+                GameObject.CreatePrimitive(PrimitiveType.Sphere);
             go.AddComponent<Rigidbody>();
             go.transform.position = transform.position;
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

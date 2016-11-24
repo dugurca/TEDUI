@@ -6,7 +6,6 @@ namespace Assets._Project.Scripts.P5
     public class Dict : MonoBehaviour
     {
         Dictionary<int, List<GameObject>> _goDict = new Dictionary<int, List<GameObject>>();
-
         void Start()
         {
             _goDict.Add(1, new List<GameObject>());
@@ -14,7 +13,9 @@ namespace Assets._Project.Scripts.P5
             _goDict.Add(3, new List<GameObject>());
         }
 	
-        void Update () {
+        void Update ()
+        {
+            ClearBalls();
             if (Random.value < 0.8f) return;
             
             var go = GameObject.CreatePrimitive(PrimitiveType.Cylinder);

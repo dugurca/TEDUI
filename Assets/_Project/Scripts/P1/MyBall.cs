@@ -11,8 +11,10 @@ namespace Assets._Project.Scripts.P1
         void Update () {
             if (IsMyCubeRotating)
             {
-                MyCube.GetComponent<Transform>().Rotate(Vector3.up);
+                MyCube.GetComponent<Transform>().Rotate(Vector3.up, C.RotateSpeed);
             }
+
+            C.RotateSpeed = 5*Mathf.Sin(Time.time);
         }
     }
 }

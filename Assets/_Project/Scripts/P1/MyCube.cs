@@ -12,7 +12,7 @@ namespace Assets._Project.Scripts.P1
             {
                 float scale = Mathf.Sin(Time.time);
                 var scaleVec = new Vector3(scale, scale, scale);
-                MyBall.GetComponent<Transform>().localScale = scaleVec;
+                MyBall.GetComponent<Transform>().localScale = scaleVec * 3f;
             }
         }
     }

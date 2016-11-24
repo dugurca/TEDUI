@@ -10,30 +10,24 @@ namespace Assets._Project.Scripts.P4
 
         void Update()
         {
-            if (Random.value < 0.9f) return;
+            ClearBalls();
+            if (Random.value > 0.9f) { 
+                GameObject go;
+                if (Random.value > 0.5)
+                {
+                    go = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                    Balls.Add(go);
+                }
+                else
+                {
+                    go = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                    Cubes.Add(go);
+                }
 
-            GameObject go;
-            if (Random.value > 0.5)
-            {
-                go = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                Balls.Add(go);
+                go.AddComponent<Rigidbody>();
+                go.transform.position = transform.position;
             }
-            else
-            {
-                go = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                Cubes.Add(go);
-            }
-
-            go.AddComponent<Rigidbody>();
-            go.transform.position = transform.position;
-
-            //Clear :(
         }
-
-
-
-
-
 
         void ClearBalls()
         {
