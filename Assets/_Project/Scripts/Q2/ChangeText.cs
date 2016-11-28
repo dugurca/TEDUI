@@ -7,10 +7,9 @@ namespace Assets._Project.Scripts.Q2
     public class ChangeText : MonoBehaviour
     {
         public Text UnityText;
-
         void Start()
         {
-            UnityText = GetComponent<Text>();
+            //UnityText = GetComponent<Text>();
         }
 
         void Update()

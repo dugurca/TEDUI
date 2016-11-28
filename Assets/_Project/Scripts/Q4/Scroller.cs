@@ -5,7 +5,7 @@ namespace Assets._Project.Scripts.Q4
 {
     public class Scroller : MonoBehaviour
     {
-        public Scrollbar myScrollbar;
+        private Scrollbar myScrollbar;
         
         void Start ()
         {
